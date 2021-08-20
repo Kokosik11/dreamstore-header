@@ -14,6 +14,7 @@ body {
 
 header {
     width: 100%;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.35);
 }
 
 .header {
@@ -90,4 +91,121 @@ header .header-content {
     width: 1200px;
     display: flex;
     justify-content: space-between;
+}
+
+.info-content .numbers,
+.number-content {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.numbers {
+    width: 287px;
+    justify-content: space-between;
+}
+
+.number-icon,
+.number-icon svg {
+    width: 11px;
+    height: 13px;
+    margin-right: 3px;
+}
+
+.number-title a{
+    text-decoration: none;
+    color: #fff;
+    transition: .25s;
+}
+
+.number-title a:hover {
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.work-title {
+    color: #fff;
+    font-size: 12px;
+}
+
+.work-content {
+    display: flex;
+    align-items: center;
+    width: 388px;
+    justify-content: space-between;
+}
+
+.social-links {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-icon svg {
+    width: 20px;
+}
+
+.social-links nav ul {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links nav ul li {
+    list-style: none;
+}
+
+.social-links svg {
+    width: 20px;
+}
+
+.social-links svg path {
+    transition: .25s;
+}
+
+.social-links svg:hover path {
+    fill: rgba(255, 255, 255, 0.644); 
+}
+
+#burger {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.48);
+    opacity: 0;
+    transition: width .2s;
+    transition: opacity .5s;
+}
+
+.burger-content {
+    padding: 50px;
+    height: 100%;
+    width: 530px;
+    box-shadow: -12px 0px 38px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(164.95deg, #56A4AE 0%, #004953 100%);
+    z-index: 999;
+}
+
+.burger-header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.menu-title {
+    margin-left: 25px;
+}
+
+.menu-icon {
+    margin-left: 6px;
+}
+
+#burger:target {
+    opacity: 1;
+    width: 100%;
 }
