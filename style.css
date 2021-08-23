@@ -209,3 +209,72 @@ header .header-content {
     opacity: 1;
     width: 100%;
 }
+
+.burger-body {
+    margin: 27px 0 0 7px;
+}
+
+.catalog-heading {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.catalog-heading h3 {
+    margin-left: 13px;
+}
+
+.catalog-categories {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    padding-top: 13px;
+    margin-top: 14px;
+    width: 326px;
+    height: 340px;
+    justify-content: space-between;
+    border-top: 2px solid #56A4AE;
+}
+
+.category-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-item {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #004953 -63.5%, #56A4AE 100%);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    font-size: 10px;
+    color: #fff;
+    padding: 12px 6px;
+    position: relative;
+    transition: .2s;
+}
+
+.item-heading {
+    position: absolute;
+    z-index: 5;
+}
+
+.category-item img {
+    position: absolute;
+    right: 0;
+    bottom: -18px;
+    z-index: 1;
+    transition: .2s;
+}
+
+.category-item:hover {
+    box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    padding: 10px 6px;
+}
+
+.category-item:hover img {
+    right: -4px;
+    bottom: -24px;
+}
